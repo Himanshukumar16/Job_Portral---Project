@@ -38,7 +38,7 @@
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="https://telusko.com/">Contact</a>
+					<a class="nav-link" href="https://himanshukumar16.github.io/portfolio/">Contact</a>
 				</li>
 			</ul>
 		</div>
