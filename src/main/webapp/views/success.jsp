@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <%@ page import="SpringBoot.practiceProject.model.JobPost" %>
-<%@page isELIgnored="false" %>
+<%@page isELIgnored="true" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,7 +78,7 @@
                     <p class="card-text">
                         <strong>Tech Stack:</strong>
                     <ul>
-                        <% for (String tech : myJobPost.getPostTechStack()) { %>
+                        <% for (String tech : JobPost.getPostTechStack()) { %>
                         <li><%= tech %></li>
                         <% } %>
                     </ul>

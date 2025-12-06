@@ -2,6 +2,7 @@ package SpringBoot.practiceProject;
 
 import SpringBoot.practiceProject.model.JobPost;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -13,7 +14,7 @@ public class JobController {
         return "home";
     }
 
-    @RequestMapping({"addjob"})
+    @GetMapping({"addjob"})
     public String addJob() {
         return "addjob";
     }
