@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <%@ page import="SpringBoot.practiceProject.model.JobPost" %>
-<%@page isELIgnored="true" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,6 +57,7 @@
 
 <%
     JobPost myJobPost = (JobPost) request.getAttribute("jobPost");
+
 %>
 
 
@@ -77,12 +78,13 @@
                     </p>
                     <p class="card-text">
                         <strong>Tech Stack:</strong>
+                    </p>
                     <ul>
-                        <% for (String tech : JobPost.getPostTechStack()) { %>
+                        <% for (String tech : myJobPost.getPostTechStack()) { %>
                         <li><%= tech %></li>
                         <% } %>
                     </ul>
-                    </p>
+
                 </div>
                 <div class="card-footer">
                     <!-- Optional footer content -->
